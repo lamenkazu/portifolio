@@ -13,7 +13,7 @@
 :root{
     --color-bg: #1f1f38;
     --color-bg0variant: #2c2c6c;
-    --color-primary: #4db5ff;
+    --color-primary: #FF5AF6;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
@@ -103,12 +103,12 @@ a:hover{
 .btn-primary{
     background: var(--color-primary);
     color: var(--color-bg);
+}
 
-    img{
-        display: block;
-        width: 100%;
-        object-fit: cover;
-    }
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
 
