@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer'
 import Testimonials from './components/testimonials/Testimonials'
 import Services from './components/services/Services';
 import Portfolio from './components/portfolio/Portfolio'
-
+import './index.css'
 
 const App = () => {
   return (
