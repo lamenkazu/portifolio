@@ -12,7 +12,7 @@
 
 :root{
     --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
+    --color-bg-variant: #552B78;
     --color-bg-variant1: #6B3431;
     --color-bg-variant2: #6B5E21;
     --color-primary: #FF5AF6;
@@ -24,7 +24,7 @@
     --container-width-md: 86%;
     --container-width-ms: 90%;
 
-    --transition: all 400ms, ease;
+    --transition: all 700ms ease;
 }
 
 html{
@@ -37,7 +37,7 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    background: var(--color-bg-variant2);
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(./assets/bg-texture.png);
