@@ -27,7 +27,7 @@ const About = () => {
             <article className="about__card">
               <AiOutlineFieldTime className='about__icon'/>
               <h5>Acadêmico</h5>
-              <small>2000h em SI e TI</small>
+              <small>1300h em SI e TI</small>
             </article>
 
             <article className="about__card">
