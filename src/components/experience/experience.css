@@ -1,0 +1,95 @@
+.experience__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center; /* Centraliza horizontalmente os containers */    
+}
+
+.experience__container > div{
+    background: var(--color-bg-variant1);
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition); 
+}
+
+.experience__container > .experience__frontend, .experience__backend{
+    height: 70%;
+}
+
+.experience__container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.experience__container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.experience__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+
+}
+
+.experience__details{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+  margin: 0.5rem; /* Adiciona uma margem à esquerda */
+  text-align: center; /* Alinha o texto à esquerda */
+  
+}
+
+.experience__details small {
+    font-size: 0.7rem; /* Impede que o ícone seja reduzido para caber no espaço */
+    color: var(--color-primary);
+}
+
+.experience__details > svg {
+    flex-shrink: 0; /* Impede que o ícone seja reduzido para caber no espaço */
+}
+
+.experience__detail-icon{
+    margin-top: 6px;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+/*MediaQueries Tablet ******************************/
+@media screen and (max-width: 1024px){
+    .experience__container{
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container > div{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .experience__container > .experience__frontend, .experience__backend{
+        height: 100%;
+    }
+
+}
+
+/*MediaQueries SmartPhone ******************************/
+@media screen and (max-width: 600px){
+    
+    .experience__container{
+        gap: 1rem;
+    }
+
+    .experience__container > div{
+        width: 95%;
+        padding: 2rem 1rem;
+    }
+    
+}
