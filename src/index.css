@@ -17,8 +17,8 @@
     --color-bg-variant2: #6B5E21;
     --color-primary: #FF5AF6;
     --color-primary-variant: rgb(255, 90, 246, 0.6);
-    --color-white: wheat;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-white: antiquewhite ;
+    --color-light: rgba(255, 255, 255, 0.705);
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
@@ -128,7 +128,7 @@ img{
 /*MediaQueries SmartPhone ******************************/
 @media screen and (max-width: 600px){
     .container{
-        width: var(--container-width-ms);
+        width: var(--container-width-sm);
     }
 
     section > h2{

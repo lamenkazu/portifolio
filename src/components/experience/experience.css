@@ -13,8 +13,12 @@
     transition: var(--transition); 
 }
 
-.experience__container > .experience__frontend, .experience__backend{
-    height: 70%;
+.experience__container > .experience__frontend {
+    height: 68%;
+}
+
+.experience__container > .experience__backend{
+    height: 75%;
 }
 
 .experience__container > div:hover{
@@ -74,7 +78,11 @@
         margin: 0 auto;
     }
 
-    .experience__container > .experience__frontend, .experience__backend{
+    .experience__container > .experience__frontend {
+        height: 100%;
+    }
+    
+    .experience__container > .experience__backend{
         height: 100%;
     }
 
@@ -88,7 +96,7 @@
     }
 
     .experience__container > div{
-        width: 95%;
+        width: 81%;
         padding: 2rem 1rem;
     }
     
