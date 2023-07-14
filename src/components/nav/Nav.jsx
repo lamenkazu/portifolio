@@ -29,7 +29,7 @@ const Nav = () => {
         const sectionHeight = section.offsetHeight;
 
         if (
-          scrollPosition >= sectionOffsetTop - windowHeight * 0.9 &&
+          scrollPosition >= sectionOffsetTop - windowHeight * 0.7 &&
           (scrollPosition < sectionOffsetTop + sectionHeight ||
             scrollPosition >= documentHeight - windowHeight - footer.offsetHeight)
         ) {
@@ -48,7 +48,7 @@ const Nav = () => {
 
       // Verificar se o scrollPosition está no header
       if (
-        scrollPosition < header.offsetHeight
+        scrollPosition < header.offsetHeight - 300
       ) {
         setActiveNav('#');
       }

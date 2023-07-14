@@ -33,6 +33,7 @@
 }
   
 .portfolio__item p.expanded {
+    font-size: small;
     max-height: 100%;
     cursor: default;
 
@@ -54,6 +55,10 @@
     color: var(--color-primary-variant);
     transition: color 0.3s ease;
   }
+
+.big{
+    font-size: 3rem;
+}
   
   .portfolio__item-tec .tec-icon.hovered {
     color: #b23;
