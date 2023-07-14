@@ -48,13 +48,13 @@ const Experience = () => {
         <div className="experience__backend">
           <h3>Domínio Backend</h3>
           <div className="experience__content">
-          <ExperienceDetail title="RESTFul API" content="Experiente"/>
+            <ExperienceDetail title="AmazonWS" content="Iniciante"/>
             <ExperienceDetail title="NodeJs" content="Experiente"/>
             <ExperienceDetail title="JDBC" content="Intermediário"/>
             <ExperienceDetail title="SQLServer" content="Experiente"/>
             <ExperienceDetail title="noSQL" content="Intermediário"/>
             <ExperienceDetail title="Firebase" content="Experiente"/>
-            <ExperienceDetail title="AmazonWS" content="Iniciante"/>
+            <ExperienceDetail title="RESTFul API" content="Experiente"/>
           </div>
         </div>
 

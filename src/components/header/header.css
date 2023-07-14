@@ -36,8 +36,8 @@ header{
 
 .header__socials::after{ /*Barra abaixo do socials*/
     content: '';
-    width: 1px;
-    height: 1.5rem;
+    width: 3px;
+    height: 3rem;
     background: var(--color-primary);
 }
 

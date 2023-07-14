@@ -9,7 +9,7 @@
     background: var(--color-bg-variant1);
     padding: 2rem 4rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     transition: var(--transition); 
 }
 
@@ -22,7 +22,6 @@
 }
 
 .experience__container > div:hover{
-    background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
