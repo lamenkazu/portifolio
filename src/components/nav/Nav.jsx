@@ -5,12 +5,60 @@ import {SiAboutdotme} from 'react-icons/si'
 import {MdWorkOutline} from 'react-icons/md'
 import {PiBooksLight} from 'react-icons/pi'
 import {AiOutlineMessage} from 'react-icons/ai'
+import {BsFillDoorOpenFill} from 'react-icons/bs'
 
-import { useState } from 'react'
+import { useState, useEffect} from 'react'
 
 const Nav = () => {
 
   const [activeNav, setActiveNav] = useState('#');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section');
+      const header = document.querySelector('header');
+      const footer = document.querySelector('footer');
+      const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        const sectionId = `#${section.id}`;
+        const sectionOffsetTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          scrollPosition >= sectionOffsetTop - windowHeight * 0.9 &&
+          (scrollPosition < sectionOffsetTop + sectionHeight ||
+            scrollPosition >= documentHeight - windowHeight - footer.offsetHeight)
+        ) {
+          setActiveNav(sectionId);
+          break;
+        }
+      }
+
+      // Verificar se o scrollPosition está no footer
+      if (
+        scrollPosition >= documentHeight - windowHeight - footer.offsetHeight &&
+        scrollPosition <= documentHeight - windowHeight
+      ) {
+        setActiveNav('#footer');
+      }
+
+      // Verificar se o scrollPosition está no header
+      if (
+        scrollPosition < header.offsetHeight
+      ) {
+        setActiveNav('#');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <nav>
@@ -19,6 +67,7 @@ const Nav = () => {
       <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><PiBooksLight/></a>
       <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><MdWorkOutline/></a>
       <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiOutlineMessage/></a>
+      <a href="#footer" onClick={() => setActiveNav('#footer')} className={activeNav === '#footer' ? 'active' : ''}><BsFillDoorOpenFill/></a>
     </nav>
   )
 }

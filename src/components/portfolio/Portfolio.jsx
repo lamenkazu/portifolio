@@ -8,7 +8,7 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <h5>você pode checar tudo isso mais detalhadamente no meu</h5>
-      <h2>Portfólio :</h2>
+      <h2>Portfólio</h2>
 
       <div className="container portfolio__container">
 

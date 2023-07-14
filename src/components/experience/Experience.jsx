@@ -5,8 +5,8 @@ import ExperienceDetail from './ExperienceDetail'
 const Experience = () => {
   return (
     <section id='experience'>
-      <h5>ficou curioso sobre</h5>
-      <h2>Minhas Experiências?</h2>
+      <h5>se você ficou curioso, aqui estão as</h5>
+      <h2>Minhas Experiências</h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">

@@ -3,6 +3,7 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials';
+import {BsArrowDownCircle} from 'react-icons/bs'
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
             <img src={ME} alt="Eu" />
         </div>
 
-        <a href="#contact" className='scroll__down'>Descer</a>
+        <a href="#footer" className='scroll__down'><BsArrowDownCircle/></a>
       </div>
     </header>
   )
