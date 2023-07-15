@@ -87,5 +87,10 @@ header{
             display: none;
         }
     }
+
+    header h1{
+        width: 14.5rem;
+        margin: auto;
+    }
 }
 

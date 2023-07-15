@@ -37,7 +37,7 @@ const PortfolioItem = ({image, tecs, title, resume, github, demo}) => {
         {expanded ? resume : 'Ler Resumo . . .'}
         </p>
         <div className="portfolio__item-cta">
-            <a href={demo} className="btn" target='_blank'>Live Demo</a>
+            {/*<a href={demo} className="btn" target='_blank'>Live Demo</a>*/}
             <a href={github} className="btn btn-primary" target='_blank'>Github Code</a>
         </div>
 

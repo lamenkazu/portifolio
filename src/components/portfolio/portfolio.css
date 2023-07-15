@@ -59,6 +59,10 @@
 .big{
     font-size: 3rem;
 }
+
+.bigbig{
+    font-size: 3.5rem;
+}
   
   .portfolio__item-tec .tec-icon.hovered {
     color: #b23;
@@ -69,6 +73,7 @@
     gap: 1rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 /*MediaQueries Tablet ******************************/
