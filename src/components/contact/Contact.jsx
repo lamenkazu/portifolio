@@ -3,8 +3,6 @@ import './contact.css'
 import {BiMailSend, BiLogoWhatsapp} from 'react-icons/bi'
 import ContactOption from './ContactOption'
 
-import {Alert} from 'react'
-
 import emailjs from 'emailjs-com';
 import { useRef } from 'react'
 
@@ -15,7 +13,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(service_2xerr0h, template_nx6rqje, form.current, rN2xNPghh5SCTtz44)
+    emailjs.sendForm("service_2xerr0h", "template_nx6rqje", form.current, "rN2xNPghh5SCTtz44")
       .then((result) => {
         window.alert("Mensagem Enviada! Agradeço o contato, responderei o mais breve possível.")
         e.target.reset()

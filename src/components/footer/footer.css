@@ -10,6 +10,11 @@ footer a{
     color: var(--color-bg);
 }
 
+footer li {
+    text-decoration: underline;
+    text-decoration-color: var(--color-bg);
+}
+
 .footer__logo{
     font-size: 2rem;
     font-weight: 500;
