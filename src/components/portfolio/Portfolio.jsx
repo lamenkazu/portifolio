@@ -4,8 +4,33 @@ import './portfolio.css'
 import PortfolioItem from './PortfolioItem'
 import portfolioData from '../../data/portfolioData'
 
+import { useState, useEffect } from 'react'
+
 const Portfolio = () => {
-  const itemsPerRow = 4;
+  const [itemsPerRow, setItemsPerRow] = useState(getItemsPerRow());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerRow(getItemsPerRow());
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  function getItemsPerRow() {
+    if (window.innerWidth >= 1024) {
+      return 4;
+    } else if (window.innerWidth >= 600) {
+      return 3;
+    } else {
+      return 2;
+    }
+  }
+  
   const numRows = Math.ceil(portfolioData.length / itemsPerRow);
 
   return (
