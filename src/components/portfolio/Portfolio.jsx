@@ -25,7 +25,7 @@ const Portfolio = () => {
     if (window.innerWidth >= 1024) {
       return 4;
     } else if (window.innerWidth >= 600) {
-      return 3;
+      return 6;
     } else {
       return 2;
     }
