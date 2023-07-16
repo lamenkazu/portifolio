@@ -57,10 +57,7 @@ const Nav = () => {
 
     if (activeNav === '#portfolio' && !portfolioAlertShown) {
       window.alert('Os itens do portfólio não estão totalmente atualizados, talvez algumas coisas não funcionem.');
-      setPortfolioAlertShown(true);
-      
-    }else if(activeNav !== '#portfolio'){
-      setPortfolioAlertShown(false)
+      setPortfolioAlertShown(true); 
     }
 
     window.addEventListener('scroll', handleScroll);
