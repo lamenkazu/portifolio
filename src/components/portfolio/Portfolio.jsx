@@ -4,29 +4,9 @@ import './portfolio.css'
 import PortfolioItem from './PortfolioItem'
 import portfolioData from '../../data/portfolioData'
 
-import {useState} from 'react'
-
 const Portfolio = () => {
-  const [expandedIndex, setExpandedIndex] = useState(null);
-
-  const toggleExpand = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
-  };
-
   const itemsPerRow = 4;
   const numRows = Math.ceil(portfolioData.length / itemsPerRow);
-
-  const getRowClass = (rowIndex, itemIndex) => {
-    const startItemIndex = rowIndex * itemsPerRow;
-    const endItemIndex = Math.min(startItemIndex + itemsPerRow - 1, portfolioData.length - 1);
-    const isExpandedRow = startItemIndex <= expandedIndex && expandedIndex <= endItemIndex;
-    const isExpandedItem = expandedIndex === itemIndex;
-
-    if (isExpandedRow && !isExpandedItem) {
-      return 'shifted';
-    }
-    return '';
-  };
 
   return (
     <section id="portfolio">
