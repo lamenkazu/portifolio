@@ -10,6 +10,8 @@
     border-radius: 2rem;
     border: 2px solid transparent;
     transition: var(--transition);
+    margin-bottom: 2.5rem; 
+
 }
 
 .portfolio__item:hover{
@@ -26,6 +28,7 @@
 }
 
 .portfolio__item p {
+    font-size: small;
     max-height: 1.8rem; /* Defina a altura máxima para o texto encurtado */
     overflow: hidden;
     transition: var(--transition);
@@ -33,13 +36,12 @@
 }
   
 .portfolio__item p.expanded {
-    font-size: small;
     max-height: 100%;
     cursor: default;
 
 }
 
-.portfolio__item p.abduce:hover {
+.portfolio__item p.abduce {
     color: aqua;
 }
 

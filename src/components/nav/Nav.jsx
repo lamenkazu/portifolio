@@ -12,6 +12,7 @@ import { useState, useEffect} from 'react'
 const Nav = () => {
 
   const [activeNav, setActiveNav] = useState('#');
+  const [portfolioAlertShown, setPortfolioAlertShown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,11 +55,19 @@ const Nav = () => {
       }
     };
 
+    if (activeNav === '#portfolio' && !portfolioAlertShown) {
+      window.alert('Os itens do portfólio não estão totalmente atualizados, talvez algumas coisas não funcionem.');
+      setPortfolioAlertShown(true);
+      
+    }else if(activeNav !== '#portfolio'){
+      setPortfolioAlertShown(false)
+    }
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [activeNav, portfolioAlertShown]);
 
   return (
     <nav>

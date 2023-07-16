@@ -15,7 +15,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, form.current, REACT_APP_PUBLIC_KEY)
+    emailjs.sendForm(service_2xerr0h, template_nx6rqje, form.current, rN2xNPghh5SCTtz44)
       .then((result) => {
         window.alert("Mensagem Enviada! Agradeço o contato, responderei o mais breve possível.")
         e.target.reset()
