@@ -45,11 +45,20 @@ const About = () => {
             </div>
 
             <p>
-              Sou um profissional versátil e apaixonado por tecnologia, com habilidades em gerenciamento de projetos, análise de dados e
-              desenvolvimento de software. Tenho expertise em tecnologias front e backend, com especialização em
-              desenvolvimento Mobile. Possuo formação acadêmica complementar em Sistemas de Informação e experiência em projetos próprios
-              de alta arquitetura, atualmente atuo como desenvolvedor fullstack web e mobile na LetsWorkFree, grupo sem fins lucrativos, com
-              objetivo de adentrar ao mercado de trabalho aplicando metodologias ágeis SCRUM
+              Formando de duas das principais federais de MG, onde pude desenvolver trabalhos de 
+              diferentes vertentes do desenvolvimento como Front, Backend e Mobile em diversas tecnologias.
+            </p>
+            <p>
+              Atuo a aproximadamente 6 meses em um grupo de desenvolvimento sem fins lucrativos voltado à 
+              inserção ao mercado de trabalho, visando práticas profissionais durante nossa semana, 6h por dia, 
+              com horário flexível. A LetsWorkFree é um projeto onde todos os desenvolvedores compartilham alguns de seus 
+              projetos próprios e melhoram eles entre si, organizando nossas tarefas de forma produtiva e organizada, 
+              trabalhando principalmente com a metodologia ágil SCRUM, mas as vezes utilizando tabelas KANBAN.
+            </p>
+            <p>
+              Atualmente também trabalho em três projetos individuais sem interação com esse grupo, 
+              onde tenho usuários ativos: ThinSecret, um aplicativo de gestão de nutrientes e estado corporal, Agendapp, 
+              um aplicativo de gestão de agendamento de clientes, e HabitPlus, um aplicativo para controle de hábitos e metas diárias.
             </p>
 
             <a href="#contact" className='btn btn-primary'>Mande uma mensagem</a>
