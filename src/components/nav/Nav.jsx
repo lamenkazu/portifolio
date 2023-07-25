@@ -55,10 +55,12 @@ const Nav = () => {
       }
     };
 
+    /*
     if (activeNav === '#portfolio' && !portfolioAlertShown) {
       window.alert('Os itens do portfólio não estão totalmente atualizados, talvez algumas coisas não funcionem.');
       setPortfolioAlertShown(true); 
     }
+    */
 
     window.addEventListener('scroll', handleScroll);
     return () => {

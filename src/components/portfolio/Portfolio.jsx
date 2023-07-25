@@ -23,11 +23,11 @@ const Portfolio = () => {
 
   function getItemsPerRow() {
     if (window.innerWidth >= 1024) {
-      return 4;
+      return 3.5;
     } else if (window.innerWidth >= 600) {
-      return 6;
+      return 5;
     } else {
-      return 2;
+      return 1;
     }
   }
   

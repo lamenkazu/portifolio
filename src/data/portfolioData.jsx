@@ -2,72 +2,119 @@ import IMG1 from '../assets/portfolio1.jpg'
 import IMG2 from '../assets/portfolio2.jpg'
 import IMG3 from '../assets/portfolio3.jpg'
 import IMG4 from '../assets/portfolio4.jpg'
-import IMG5 from '../assets/portfolio5.png'
-import IMG6 from '../assets/portfolio6.jpg'
+import IMG5 from '../assets/portfolio 5.jpg'
+import IMG6 from '../assets/portifolio5.jpg'
+import IMG7 from '../assets/portifolio6.jpg'
+import IMG10 from '../assets/portfolio6.jpg'
 
 import { BiLogoJava, BiLogoJavascript, BiLogoTypescript, 
         BiLogoFirebase, BiLogoNodejs, BiLogoReact, BiLogoCss3, 
         BiLogoCPlusPlus, BiLogoHtml5, BiLogoAndroid} from 'react-icons/bi'
 import {GrSwift, GrMysql} from 'react-icons/gr'
 import {BsFiletypeScss, BsFiletypeXml} from 'react-icons/bs'
-import {SiCss3, SiXampp, SiIos, SiJavascript, SiMaterialdesign, SiSqlite, SiVite, SiGithubpages} from 'react-icons/si'
+import {SiCss3, SiTailwindcss, SiPrisma, SiXampp, SiIos, SiJavascript, SiMaterialdesign, SiSqlite, SiVite, SiGithubpages, SiKotlin} from 'react-icons/si'
 import {TbBrandReactNative, TbSql, TbBrandCoinbase} from 'react-icons/tb'
 import {DiNodejs, DiSass} from 'react-icons/di'
 import {PiGraphFill, PiTreeStructure} from 'react-icons/pi'
 
 const portfolioData = [
-    {
-      id: 1,
-      image: IMG6,
-      tecs: [<BiLogoAndroid/>, <BiLogoJava/>, <BsFiletypeXml/>, <SiMaterialdesign/>, <BiLogoFirebase/>],
-      title: "Thin Secret Android",
-      resume: "Nessa versão produzida em Android, o ThinSecret é uma versão réplica do aplicativo FatSecret, contador de nutrientes e calorias. Seu objetivo é tornar o cálculo de IDR mais flexível de acordo com as necessidades do usuário, sem tendenciar o código para a perda de peso. Com uma gama de 45 opções de dieta para alcançar seus objetivos, o usuário tem uma ampla cama de escolhas.",
-      github: "https://github.com/lamenkazu/ThinSecret",
-      demo: "#"
-    },
-    {
-      id: 2,
-      image: IMG6,
-      tecs: [<SiIos/>, <GrSwift/>, <BiLogoFirebase/>],
-      title: "Habits",
-      resume: "Hab",
-      github: "!",
-      demo: "https://github.com/jemaf"
-    },
-    {
+      {
       id: 3,
-      image: IMG4,
+      image: IMG5,
       tecs: [<BiLogoReact/>, <SiVite/>, <SiCss3/>, <SiGithubpages/>],
-      title: "Portfólio Pessoal",
-      resume: "É claro que, esse próprio site não iria passar batido. Construído em React + Vite, estilizado em CSS3 e publicado pelo GithubPages, me esforcei nos mínimos detalhes, ao mesmo tempo em que construí um código fácil de ser lido, claro e com boas práticas de programação. O Código é aberto, e pode ser livremente utilizado por quem quiser replicar.",
+      title: "Portfólio Pessoal - React",
+      resume: 
+            `Esse próprio site que você está navegando e todas as suas interações também foram feitas por mim. 
+            Construído em React + Vite, estilizado em CSS3 e publicado pelo GithubPages, me esforcei nos mínimos detalhes, 
+            ao mesmo tempo em que construí um código fácil de ser lido, 
+            claro e com boas práticas de programação. O Código é aberto, e pode ser livremente utilizado por quem quiser replicar uma versão similar.`,
+
       github: "https://github.com/lamenkazu/portifolio",
       demo: "https://github.com/jemaf"
     },
     {
+      id: 2,
+      image: null,
+      tecs: [<BiLogoTypescript/>, <TbBrandReactNative/>, <SiTailwindcss/>, <SiSqlite/>, <SiPrisma/>],
+      title: "Habits - React Native",
+      resume: 
+            `Habits é um aplicativo de controle de metas diárias. Você pode criar um hábito para os dias da semana que você decidir,
+            acompanhar seu progresso diário com as metas definidas. Este projeto foi desenvolvido durante o nlw-11 da RocketSeat,
+            onde a aplicação mobile foi desenvolvida em React Native em Typescript, utilizando TailwindCSS e a plataforma Expo.
+            Seu servidor foi desenvolvido com Node em Typescript, utilizando Fastify, Prisma ORM em SQLite`,
+      github: "https://github.com/lamenkazu/Habit-Test",
+      demo: "https://github.com/jemaf"
+    },
+    {
+      id: 13,
+      image: IMG7,
+      tecs: [<BiLogoAndroid/>, <SiKotlin/>, <SiMaterialdesign/>],
+      title: "Lembrol - Kotlin App",
+      resume: 
+            `O Lembrol é uma aplicação mobile com objetivo de adicionar novos lembretes, informando data do lembrete.
+            Você pode criar um novo lembrete e organiza-lo em uma lista reativa, e remover seus itens de forma intuitiva. 
+            Lembretes de uma mesma data são agrupados de forma eficiente, além das datas serem exibidas em ordem cronológica, 
+            independente da ordem de inserção. O foco dessa aplicação foi a qualidade de código, onde ele é 100% testado, claro, 
+            legível e clean. Essa aplicação no entanto, não conta atualmente com uma persistência de dados, 
+            que deve ser futuramente implementada. Nessa sua versão em Kotlin, foi desenvolvida de forma muito mais eficiente e prática, 
+            gerando 80x menos warnings no código, utilizando o Android SDK e a biblioteca do Google MaterialDesign.`,
+      github: "https://github.com/lamenkazu/LembrolKotlin",
+      demo: "https://github.com/jemaf"
+    },
+    {
+      id: 1,
+      image: IMG10,
+      tecs: [<BiLogoAndroid/>, <BiLogoJava/>, <BsFiletypeXml/>, <SiMaterialdesign/>, <BiLogoFirebase/>],
+      title: "Thin Secret Android in Java",
+      resume: "Nessa versão produzida em Android, o ThinSecret é uma versão réplica do aplicativo FatSecret, contador de nutrientes e calorias. Seu objetivo é tornar o cálculo de IDR mais flexível de acordo com as necessidades do usuário, sem tendenciar o código para a perda de peso. Com uma gama de 45 opções de dieta para alcançar seus objetivos, o usuário tem uma ampla cama de escolhas.",
+      github: "https://github.com/lamenkazu/ThinSecret",
+      demo: "#"
+    },
+    /*
+    {
       id: 4,
-      image: IMG6,
+      image: IMG10,
       tecs: [<SiIos/>, <GrSwift/>, <BiLogoFirebase/>],
       title: "Thin Secret iOS",
-      resume: "Em sua versão iOS, o ThinSecret foi um re-trabalho do ThinSecret para Android. Criado no padrão arquitetural MVVM, ele utiliza o mesmo banco de dados no Firebase, porém o design foi refeito para se adequar melhor ao iPhone. O trabalho é menos desenvolvido, por falta de tempo com o material necessário, porém segue os mesmos padrões de requisitos e regras de negócio foram implementados.",
+      resume: 
+            `Em sua versão iOS, o ThinSecret foi um re-trabalho do ThinSecret para Android. 
+            Criado no padrão arquitetural MVVM, ele utiliza o mesmo banco de dados no Firebase, 
+            porém o design foi refeito para se adequar melhor ao iPhone. O trabalho é menos desenvolvido, 
+            por falta de tempo com o material necessário, porém segue os mesmos padrões de requisitos 
+            e regras de negócio foram implementados.`,
       github: "!",
       demo: "https://github.com/jemaf"
     },
+*/
     {
       id: 5,
       image: IMG6,
       tecs: [<BiLogoAndroid/>, <BiLogoJava/>, <SiMaterialdesign/>],
-      title: "Lembrol - Reminder App",
-      resume: "O Lembrol é uma aplicação mobile com objetivo de adicionar novos lembretes, informando data do lembrete. Você pode criar um novo lembrete e organiza-lo em uma lista reativa, e remover seus itens de forma intuitiva. Lembretes de uma mesma data são agrupados de forma eficiente, além das datas serem exibidas em ordem cronológica, independente da ordem de inserção. O foco dessa aplicação foi a qualidade de código, onde ele é 100% testado, claro, legível e clean. Essa aplicação no entanto, não conta atualmente com uma persistência de dados, que deve ser futuramente implementada. A aplicação foi feita no Android Studio em Java, utilizando o Android SDK e JetpackCompose, além da biblioteca do Google MaterialDesign.",
-      github: "!",
+      title: "Lembrol - Java App",
+      resume: 
+            `O Lembrol é uma aplicação mobile com objetivo de adicionar novos lembretes, informando data do lembrete.
+            Você pode criar um novo lembrete e organiza-lo em uma lista reativa, e remover seus itens de forma intuitiva. 
+            Lembretes de uma mesma data são agrupados de forma eficiente, além das datas serem exibidas em ordem cronológica, 
+            independente da ordem de inserção. O foco dessa aplicação foi a qualidade de código, onde ele é 100% testado, claro, 
+            legível e clean. Essa aplicação no entanto, não conta atualmente com uma persistência de dados, 
+            que deve ser futuramente implementada. A aplicação foi feita no Android Studio em Java, utilizando o Android SDK e a 
+            biblioteca do Google MaterialDesign.`,
+      github: "https://github.com/lamenkazu/lembrol",
       demo: "https://github.com/jemaf"
     },
     {
       id: 6,
-      image: IMG6,
+      image: IMG4,
       tecs: [<TbBrandCoinbase/>, <PiGraphFill/>, <PiTreeStructure/>],
-      title: "CaraLivro, Rede Social C",
-      resume: "Aplicação e desenvolvimento de conceitos avançados em estruturas de dados, como Grafos, Listas Encadeadas, Hash, Métodos de Ordenação, dentre outros, para protótipo de rede social funcional no terminal. Apesar da falta de conectividade com a Internet e uma interface adequada, as funcionalidades de uma rede social foram implementadas através de estruturas de dadas criadas por mim mesmo, como trabalho de entrega da disciplina de AEDS. Gosto de mostrar esse projeto, pois foi um marco no meu aprendizado aprofundado de estruturas de dados, como construí-las e operar sobre elas.",
-      github: "!",
+      title: "CaraLivro - C App",
+      resume: 
+            `Aplicação e desenvolvimento de conceitos avançados em estruturas de dados, como Grafos, Listas Encadeadas, 
+            Hash, Métodos de Ordenação, dentre outros, para protótipo de rede social funcional no terminal. 
+            Apesar da falta de conectividade com a Internet e uma interface adequada, as funcionalidades de uma rede social foram 
+            implementadas através de estruturas de dadas criadas por mim mesmo, como trabalho de entrega da disciplina de AEDS. 
+            Gosto de mostrar esse projeto, pois foi um marco no meu aprendizado aprofundado de estruturas de dados, como construí-las e 
+            operar sobre elas.`,
+      github: "https://github.com/lamenkazu/Segundo-Semestre-UFMG/tree/main/AEDS/Trabalho%20Final%20-%20CaraLivro",
       demo: "https://github.com/jemaf"
     },
     {
@@ -119,9 +166,10 @@ const portfolioData = [
       github: "https://github.com/lamenkazu/AgendApp3.0",
       demo: "https://github.com/jemaf"
     },
+    /*
     {
       id: 10,
-      image: IMG4,
+      image: IMG6,
       tecs: [<GrSwift/>, <BsFiletypeScss/>, <BiLogoAndroid/>],
       title: "Eu Quero Café!",
       resume: "CAfé café café",
@@ -130,7 +178,7 @@ const portfolioData = [
     },
     {
       id: 11,
-      image: IMG4,
+      image: IMG6,
       tecs: [<GrSwift/>, <BsFiletypeScss/>, <BiLogoAndroid/>],
       title: "Habit Plus",
       resume: ". . . .",
@@ -139,13 +187,14 @@ const portfolioData = [
     },
     {
       id: 12,
-      image: IMG4,
+      image: IMG6,
       tecs: [<GrSwift/>, <BsFiletypeScss/>, <BiLogoAndroid/>],
       title: "Humor",
       resume: "Aplicação e desenvolv.",
       github: "!",
       demo: "https://github.com/jemaf"
     },
+    */
 ]
 
 export default portfolioData
