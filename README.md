@@ -17,7 +17,7 @@ Se você fez o download dos arquivos desse repositório e não sabe como rodar u
 Se você por acaso teve problema com a porta de escolha automática, você precisa alterar a 
 porta de escolha no arquivo vite.config.js, de uma forma similar a esta:
 ```
- export default defineConfig({
+export default defineConfig({
   // ...configurações ja feitas
   server: {
     port: 3006,
