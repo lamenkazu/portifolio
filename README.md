@@ -6,12 +6,12 @@ O menu de navegação é alterado automaticamente conforme você explora a pági
 
 Todo o código está disponível em meu GitHub, e se você é um desenvolvedor e deseja saber como implementei algumas funcionalidades, sinta-se à vontade para utilizá-lo. É claro que estou sempre buscando melhorias, e em breve todo o conteúdo estará configurado em arquivos de dados, possibilitando a tradução da página para outras línguas, entre outras mudanças.
 
-# Como Rodar
+## Como Rodar
 
 Se você fez o download dos arquivos desse repositório e não sabe como rodar uma aplicação react, aqui está um breve tutorial:
--Primeiro, você precisa ter o Node instalado em sua máquina.
--É necessário que você instale o node_modules no Folder onde o projeto se encontra. Para isso, você precisa abrir o terminal na pasta do projeto e rodar o comando: npm i
--Feito isso, basta rodar o comando "npm start" e o site irá rodar em uma porta LocalHost. 
+- Primeiro, você precisa ter o Node instalado em sua máquina.
+- É necessário que você instale o node_modules no Folder onde o projeto se encontra. Para isso, você precisa abrir o terminal na pasta do projeto e rodar o comando: npm i
+- Feito isso, basta rodar o comando "npm start" e o site irá rodar em uma porta LocalHost. 
 
 ## Em caso de problemas
 Se você por acaso teve problema com a porta de escolha automática, você precisa alterar a 
