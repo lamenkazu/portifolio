@@ -31,9 +31,8 @@ const portfolioData = [
       resume: 
             `Esse próprio site que você está navegando e todas as suas interações também foram feitas por mim. 
             Construído em React + Vite, estilizado em CSS3 e publicado pelo GithubPages, me esforcei nos mínimos detalhes, 
-            ao mesmo tempo em que construí um código fácil de ser lido, 
-            claro e com boas práticas de programação. O Código é aberto, e pode ser livremente utilizado por quem quiser replicar 
-            uma versão similar.`,
+            ao mesmo tempo em que construí um código fácil de ser lido, claro e com boas práticas de programação. 
+            O Código é aberto, e pode ser livremente utilizado por quem quiser replicar uma versão similar.`,
 
       github: "https://github.com/lamenkazu/portifolio",
       demo: "https://github.com/jemaf"
@@ -47,7 +46,7 @@ const portfolioData = [
             `Habits é um aplicativo de controle de metas diárias. Você pode criar um hábito para os dias da semana que você decidir e
             acompanhar seu progresso diário com as metas definidas. Tanto o servidor quanto a interface do usuário foram desenvolvidas
             em Typescrypt, sendo a aplicação mobile desenvolvida em React Native utilizando TailwindCSS e a plataforma Expo.
-            O servidor, por sua vez, foi desenvolvido com Node em Typescript, utilizando Fastify, Prisma ORM em SQLite`,
+            O servidor, por sua vez, foi desenvolvido com Node utilizando Fastify, Prisma ORM em SQLite`,
       github: "https://github.com/lamenkazu/Habit-Test",
       demo: "https://github.com/jemaf"
     },

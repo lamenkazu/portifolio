@@ -39,7 +39,7 @@ const About = () => {
             <article className="about__card">
               <PiProjectorScreenThin className='about__icon'/>
               <h5>Projetos</h5>
-              <small>+ projetos</small>
+              <small>11+ projetos</small>
             </article>
 
             </div>
