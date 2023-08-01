@@ -16,9 +16,10 @@ const Nav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('section');
       const header = document.querySelector('header');
       const footer = document.querySelector('footer');
+      
+      const sections = document.querySelectorAll('section');
       const scrollPosition = window.scrollY || document.documentElement.scrollTop;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;

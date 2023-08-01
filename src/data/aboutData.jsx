@@ -14,6 +14,9 @@ const timeInWork = `${monthDiff >= 12 ?
                     (yearDiff > 1 ? `Nos ultimos ${yearDiff} anos` : `No ultimo ano`) :
                     `Nos ultimos ${monthDiff} meses`}`
 
+
+                    
+
 export const aboutCardData = [
     {
         id: 1,
