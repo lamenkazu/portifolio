@@ -16,7 +16,7 @@ import { BiLogoJava, BiLogoJavascript, BiLogoTypescript,
         BiLogoCPlusPlus, BiLogoHtml5, BiLogoAndroid} from 'react-icons/bi'
 import {GrSwift, GrMysql} from 'react-icons/gr'
 import {BsFiletypeScss, BsFiletypeXml} from 'react-icons/bs'
-import {SiCss3, SiXcode, SiTailwindcss, SiPrisma, SiXampp, SiIos, SiJavascript, SiMaterialdesign, SiSqlite, SiVite, SiGithubpages, SiKotlin} from 'react-icons/si'
+import {SiCss3, SiXcode, SiTailwindcss, SiPrisma, SiXampp, SiIos, SiJavascript, SiMaterialdesign, SiSqlite, SiVite, SiGithubpages, SiKotlin, SiJetpackcompose} from 'react-icons/si'
 import {TbBrandReactNative, TbSql, TbBrandCoinbase} from 'react-icons/tb'
 import {DiNodejs, DiSass} from 'react-icons/di'
 import {MdHttp} from 'react-icons/md'
@@ -50,6 +50,17 @@ const portfolioData = [
       github: "https://github.com/lamenkazu/Habit-Test",
       demo: "https://github.com/jemaf"
     },
+
+    {
+      id: 10,
+      image: IMG12,
+      tecs: [<BiLogoAndroid/>, <SiJetpackcompose/>, <SiSqlite/>],
+      title: "Lista de Tarefas - App",
+      resume: "Desenvolvido de forma Nativa para Android com Jetpack Compose, utilizando um banco de dados SQLite e disponibilização para download.",
+      github: "https://github.com/lamenkazu/TaskListApp",
+      demo: "https://github.com/jemaf"
+    },
+
     {
       id: 13,
       image: IMG7,
@@ -125,15 +136,7 @@ const portfolioData = [
       demo: "#"
     },
         
-    {
-      id: 10,
-      image: IMG12,
-      tecs: [<GrSwift/>, <BsFiletypeScss/>, <BiLogoAndroid/>],
-      title: "ThinSecret in Kotlin",
-      resume: "Em desenvolvimento",
-      github: "!",
-      demo: "https://github.com/jemaf"
-    },
+    
     {
       id: 4,
       image: IMG11,
